@@ -10,6 +10,7 @@ import tomli
 
 from . import util
 
+print("build was executed")
 
 HOME_PAGE = Path("README.md")
 GLOSSARY_PATH = Path("glossary") / "index.md"
@@ -29,6 +30,7 @@ MARKDOWN_EXTENSIONS = ["attr_list", "codehilite", "def_list", "fenced_code", "md
 
 
 def build(options):
+    breakpoint()
     """Build the site."""
     config = _load_configuration(options)
     env = Environment(loader=FileSystemLoader(config["templates"]))
