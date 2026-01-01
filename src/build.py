@@ -69,6 +69,7 @@ def _build_page(config, env, slug, src_path):
         func(config, dst_path, doc)
 
     try:
+        breakpoint()
         dst_path.write_text(str(doc), encoding='utf-8')
     except Exception as exc:
         print(f"unable to write {dst_path} because {exc}")

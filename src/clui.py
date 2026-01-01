@@ -29,7 +29,6 @@ def main():
     if args.version:
         print(importlib.metadata.version("mccole"))
     elif args.command in commands:
-        breakpoint()
         commands[args.command][0](args)
     else:
         print(f"unknown command {args.command}", file=sys.stderr)
