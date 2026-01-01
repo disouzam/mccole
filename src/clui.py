@@ -11,6 +11,8 @@ from .create import create
 
 
 def main():
+    breakpoint()
+    print("Entry point for mccole")
     """Main driver."""
     commands = {
         "build": (build, _make_build_parser, "build site"),
