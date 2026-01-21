@@ -345,6 +345,7 @@ def _patch_figure_numbers(config, dst_path, doc):
 
 def _patch_glossary_links(config, dst_path, doc):
     """Convert g: glossary links."""
+    breakpoint()
     _patch_special_link(config, dst_path, doc, "g:", "glossary", False)
 
 
@@ -396,6 +397,7 @@ def _patch_table_numbers(config, dst_path, doc):
 
 def _patch_terms_defined(config, dst_path, doc):
     """Insert terms defined where requested."""
+    breakpoint()
     paragraphs = doc.select("p#terms")
     if not paragraphs:
         return
