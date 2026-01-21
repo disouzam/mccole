@@ -5,9 +5,9 @@ import importlib.metadata
 from pathlib import Path
 import sys
 
-from .build import build
-from .check import check
-from .create import create
+from build import build
+from check import check
+from create import create
 
 
 def main():
@@ -68,3 +68,6 @@ def _make_create_parser(parser):
     parser.add_argument(
         "--only", type=Path, nargs="+", help="only install specific files"
     )
+
+if __name__ == "__main__":
+    main()

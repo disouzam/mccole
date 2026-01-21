@@ -8,7 +8,7 @@ import sys
 from bs4 import BeautifulSoup
 from html5validator.validator import Validator
 
-from . import util
+import util
 
 
 GLOBAL = "<global>"

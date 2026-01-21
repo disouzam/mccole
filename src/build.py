@@ -8,7 +8,7 @@ from markdown import markdown
 import sys
 import tomli
 
-from . import util
+import util
 
 HOME_PAGE = Path("README.md")
 GLOSSARY_PATH = Path("glossary") / "index.md"
