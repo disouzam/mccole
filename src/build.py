@@ -66,6 +66,7 @@ def _build_page(config, env, slug, src_path):
         _patch_markdown_attribute,  # must be at the end
         _patch_root_links,  # must be at the end
     ]:
+        print(f"Source path is: {src_path}")
         breakpoint()
         func(config, dst_path, doc)
 
